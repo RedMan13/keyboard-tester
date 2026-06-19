@@ -1,0 +1,23 @@
+{
+  "name": "ragnag",
+  "version": "1.0.0",
+  "main": "./wrapper.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "DEVELOP=\"true\" node ."
+  },
+  "keywords": [],
+  "author": "RedMan13",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "3d-core-raub": "^5.3.0",
+    "canvas": "^3.1.0",
+    "grapheme-breaker": "0.3.2",
+    "hull.js": "0.2.1",
+    "linebreak": "0.3.0",
+    "minilog": "3.1.0",
+    "twgl.js": "4.4.0"
+  },
+  "devDependencies": {}
+}
