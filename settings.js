@@ -143,7 +143,7 @@ const keySwitches = [
 class Settings {
     static width = 1100;
     static height = 266;
-    static fadeTime = 2000;
+    static fadeTime = 1 * 60 * 1000;
     /** @type {import('skia-canvas').Window} */
     window = null;
     /** @type {import('skia-canvas').CanvasRenderingContext2D} */
@@ -220,7 +220,7 @@ class Settings {
         this.ctx.fillStyle = typeof this.key[code] === 'boolean'
             ? '#EEEA' 
             : code in this.key 
-                ? '#' + Math.floor((5 * Math.max(1- ((Date.now() - this.key[code]) / Settings.fadeTime), 0)) + 11).toString(16).repeat(3) + '8'
+                ? '#' + Math.floor((85 * Math.max(1- ((Date.now() - this.key[code]) / Settings.fadeTime), 0)) + 170).toString(16).padStart(2, '0').repeat(3) + '88'
                 : '#9998';
         this.ctx.strokeWidth = 0;
         this.ctx.fillRect(x,y, w,h);
